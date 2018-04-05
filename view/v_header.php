@@ -71,6 +71,7 @@ include_once ("v_headB.php");
                     <?php
                     }
                     ?>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="model/disconnect.php">Déconnexion</a>
             </div>
         </div
