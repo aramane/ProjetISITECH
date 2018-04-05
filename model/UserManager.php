@@ -15,9 +15,10 @@ class UserManager
 
     public function add(User $user)
     {
-        $q = $this->db->prepare('INSERT INTO user(address, email, name, firstName, type, phone, premium, id_authentification) VALUES(:address, :email, :name, :firstName, :type, :phone, :premium, :id_authentification)');
+        $q = $this->db->prepare('INSERT INTO user(address, password, email, name, firstName, type, phone, premium, id_authentification) VALUES(:address, :password, :email, :name, :firstName, :type, :phone, :premium, :id_authentification)');
         $q->execute(array(
             'address' => $user->address(),
+            'password' => $user->password(),
             'email' => $user->email(),
             'name' => $user->name(),
             'firstName' => $user->firstName(),
@@ -107,9 +108,10 @@ class UserManager
 
     public function update(User $user)
     {
-        $q = $this->db->prepare('UPDATE user SET address = :address, email = :email, name = :name, firstName = :firstName, type = :type, phone = :phone, premium = :premium, id_authentification = :id_authentification WHERE id = :id');
+        $q = $this->db->prepare('UPDATE user SET address = :address, password = :password, email = :email, name = :name, firstName = :firstName, type = :type, phone = :phone, premium = :premium, id_authentification = :id_authentification WHERE id = :id');
         $q->execute(array(
             'address' => $user->address(),
+            'password' => $user->password(),
             'email' => $user->email(),
             'name' => $user->name(),
             'firstName' => $user->firstName(),
