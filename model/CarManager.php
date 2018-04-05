@@ -15,13 +15,15 @@ class CarManager
 
     public function add(Car $car)
     {
-        $q = $this->db->prepare('INSERT INTO car(registration, name, color, model, brand, id_option, id_category) VALUES(:registration, :name, :color, :model, :brand, :id_option, :id_category)');
+        $q = $this->db->prepare('INSERT INTO car(registration, name, color, model, brand, url, price, id_option, id_category) VALUES(:registration, :name, :color, :model, :brand, :url, :price, :id_option, :id_category)');
         $q->execute(array(
             'registration' => $car->registration(),
             'name' => $car->name(),
             'color' => $car->color(),
             'model' => $car->model(),
             'brand' => $car->brand(),
+            'url' => $car->url(),
+            'price' => $car->price(),
             'id_option' => $car->id_option(),
             'id_category' => $car->id_category()
         ));
@@ -68,7 +70,6 @@ class CarManager
 
     public function getByCategory($category)
     {
-
         $cars = [];
 
         $q = $this->db->prepare('SELECT * FROM car WHERE id_category = :category ');
@@ -84,21 +85,19 @@ class CarManager
         return $cars;
 
         $q->closeCursor();
-
-
-
-
     }
 
     public function update(Car $car)
     {
-        $q = $this->db->prepare('UPDATE car SET registration = :registration, name = :name, color = :color, model = :model, brand = :brand, id_option = :id_option, id_category = :id_category WHERE id = :id');
+        $q = $this->db->prepare('UPDATE car SET registration = :registration, name = :name, color = :color, model = :model, brand = :brand, url = :url, price = :price, id_option = :id_option, id_category = :id_category WHERE id = :id');
         $q->execute(array(
             'registration' => $car->registration(),
             'name' => $car->name(),
             'color' => $car->color(),
             'model' => $car->model(),
             'brand' => $car->brand(),
+            'url' => $car->url(),
+            'price' => $car->price(),
             'id_option' => $car->id_option(),
             'id_category' => $car->id_category(),
             'id' => $car->id()
