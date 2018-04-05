@@ -4,13 +4,13 @@ session_start();
 
 include("model/loadClass.php");
 include("view/v_header.php");
-
+echo '<div style="height: 10%;"></div>';
 
 if (isset($_GET['category'])){
 
     $type=$_GET['category'];
 
-    echo $type;
+
 
     $carManager= new CarManager();
 
@@ -27,7 +27,7 @@ if (isset($_GET['category'])){
 
 
     }
-    echo count($cars);
+
     echo '</div>';
 
 
