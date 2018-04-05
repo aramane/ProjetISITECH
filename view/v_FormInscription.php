@@ -17,20 +17,20 @@
 
 
 
-                <form id="inscription">
+                <form id="subscribeForm">
 
                     <div class="row">
 
                         <div class="col">
                             <label></label>
-                            <input type="text" class="form-control" name="nom" placeholder="Nom" required>
+                            <input type="text" id="Sname" class="form-control" name="Sname" placeholder="Nom">
                         </div>
 
 
 
                         <div class="col">
                             <label></label>
-                            <input type="text" class="form-control" name="prenom" placeholder="Prenom" required>
+                            <input type="text" id="Sfirstname" class="form-control" name="SfirstName" placeholder="Prenom">
                         </div>
 
                     </div>
@@ -41,7 +41,7 @@
 
                     <div class="form-group col">
                         <label></label>
-                        <input type="text" class="form-control" id="validationDefault03" name="adresse" placeholder="Adresse" required>
+                        <input type="text" class="form-control" id="Saddress" id="validationDefault03" name="Saddress" placeholder="Adresse">
                     </div>
 
                     </div>
@@ -52,7 +52,7 @@
 
                         <div class="form-group col">
                             <label></label>
-                            <input type="text" class="form-control" name="phone" placeholder="Téléphone" required>
+                            <input type="text" class="form-control" id="Sphone" name="Sphone" placeholder="Téléphone">
                         </div>
 
 
@@ -60,21 +60,21 @@
 
                     <div class="form-group">
                         <label></label>
-                        <input type="email" class="form-control"  name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <input type="email" class="form-control" id="Semail" name="Semail" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
 
                     <div class="form-group">
                         <label></label>
-                        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
+                        <input type="password" class="form-control" id="Spassword" name="Spassword" placeholder="Mot de passe">
 
 
 
                     </div><br />
 
                     <div class="form-group">
-                        <label>Carte Abonement (Tarif préferenciel)</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label>Carte Abonnement (Tarif préferenciel)</label>&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="cardabo" class="custom-control-input">
+                            <input type="radio" checked id="customRadioInline1" name="cardabo" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline1">OUI</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
@@ -84,9 +84,11 @@
 
                     </div>
                     
+                    <div id="sErrMess" style="color: red;"><span id="sErrMessText"></span><a href="" id="connectLink">Connectez-vous.</a></div>
+                    
                     <br />
 
-                    <button type="submit" class="btn btn-secondary btn-block text-white" name="valider" value="valider">S'inscrire</button>
+                    <button type="submit" class="btn btn-secondary btn-block text-white" id="subscribeBtn" name="valider" value="valider">S'inscrire</button>
 
                 </form>
 
