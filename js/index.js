@@ -39,7 +39,7 @@ $('#connexionBtn').on('click', function (e) {
         success: function (data)
         {
             if(data == 1)
-            {
+            { 
                 window.location.reload();
             }
             else
@@ -100,7 +100,13 @@ $('#subscribeBtn').on('click', function(e){
             {
                 if(data == 1)
                 {
-                    window.location.reload();
+                    swal({
+                        type: 'success',
+                        title: 'Inscrit',
+                        text: 'Vous-êtes maintenant inscris et vous pouvez profiter de nos services.',
+                    }).then(function(){
+                        window.location.reload();
+                    });
                 }
                 else
                 {
