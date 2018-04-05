@@ -1,6 +1,15 @@
 $('#errMess').hide();
 $('#sErrMess').hide();
 
+$('#connectmodal').on('hidden.bs.modal', function () {
+    $('#errMess').hide();
+})
+
+$('#Inscripmodal').on('hidden.bs.modal', function(){
+    $('#sErrMess').hide();
+    $('#Sname, #Sfirstname, #Saddress, #Sphone, #Semail, #Spassword').css("border-color", "#CED4DA");
+})
+
 $('#subscribe').on('click', function(e){
     e.preventDefault();
     $('#errMess').hide();
