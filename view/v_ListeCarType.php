@@ -12,6 +12,17 @@
             <p><div style="font-size: 25px; color: #815817;"><b><?php echo $car->price().' € par jour';?></b></div></p>
                 </div>
             </div>
+            <p>
+                 <?php
+
+                 if ($Premium->premium()==1)
+
+                     echo '<div class="card" style="background-color: #c89f16; border: none;"> Tarif premium    ' .($car->price()*(0.80)).'</div>';
+
+                 ?>
+
+
+            </p>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="./ReservationCar.php?category=1" class="btn btn-secondary  btn-block">CHOISIR</a>
         </div>
