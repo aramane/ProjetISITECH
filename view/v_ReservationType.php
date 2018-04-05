@@ -14,16 +14,13 @@
             <img src="./media/img/berline.png" style="height: 200px; ">
             <div class="card-body" style="text-align: center;">
 
-                <div class="row">
-                    <div class="col">
+
                 <h4 class="card-title">Berline </h4>
-                    </div>
-                    <div class="col">
-                <?php $cars = $carManager->getByCategory(1);
-                echo '<div style="background-color: #37c8ab;height: 30px;width: 30px;border-radius: 15px;">'.count($cars).'</div> ';
-                ?>
-                    </div>
-                </div>
+
+                <p><?php $cars = $carManager->getByCategory(1);
+                echo '<div style="background-color: #815817;height: 40px;width: 40px;border-radius: 20px; margin-left:45%;margin-right: 45%; padding-top: 8px;color: #fff;"><b>' .count($cars).'</b></div> ';
+                ?></p>
+
 
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
@@ -38,7 +35,8 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">Citadine</h5>
                 <p><?php $cars = $carManager->getByCategory(2);
-                    echo count($cars);
+                    echo '<div style="background-color: #815817;height: 40px;width: 40px;border-radius: 20px; margin-left:45%;margin-right: 45%; padding-top: 8px;color: #fff;"><b>' .count($cars).'</b></div> ';
+
 
                     ?></p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -53,7 +51,8 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">Utilitaire</h5>
                 <p><?php $cars = $carManager->getByCategory(3);
-                    echo count($cars);
+                    echo '<div style="background-color: #815817;height: 40px;width: 40px;border-radius: 20px; margin-left:45%;margin-right: 45%; padding-top: 8px;color: #fff;"><b>' .count($cars).'</b></div> ';
+
 
                     ?></p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -68,7 +67,8 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">SUV</h5>
                 <p><?php $cars = $carManager->getByCategory(4);
-                    echo count($cars);
+                    echo '<div style="background-color: #815817;height: 40px;width: 40px;border-radius: 20px; margin-left:45%;margin-right: 45%; padding-top: 8px;color: #fff;"><b>' .count($cars).'</b></div> ';
+
 
                     ?></p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -77,13 +77,14 @@
         </div>
     </div>
 
-    <div class="col">
+    <div class="col" >
         <div class="card">
             <img src="./media/img/4x4.png" style="height: 200px;">
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">4 X 4</h5>
                 <p><?php $cars = $carManager->getByCategory(5);
-                    echo count($cars);
+                    echo '<div style="background-color: #815817;height: 40px;width: 40px;border-radius: 20px; margin-left:45%;margin-right: 45%; padding-top: 8px;color: #fff;"><b>' .count($cars).'</b></div> ';
+
 
                     ?></p>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
