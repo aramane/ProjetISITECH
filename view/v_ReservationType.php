@@ -15,7 +15,7 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">Berline</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="Vue_ReservationCar.php?category=0" class="btn btn-secondary  btn-block">CHOISIR</a>
+                <a href="./ReservationCar.php?category=1" class="btn btn-secondary  btn-block">CHOISIR</a>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">Citadine</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="Vue_ReservationCar.php?category=1" class="btn btn-secondary  btn-block">CHOISIR</a>
+                <a href="./ReservationCar.php?category=2" class="btn btn-secondary  btn-block">CHOISIR</a>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">Utilitaire</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="Vue_ReservationCar.php?category=3" class="btn btn-secondary  btn-block">CHOISIR</a>
+                <a href="./ReservationCar.php?category=3" class="btn btn-secondary  btn-block">CHOISIR</a>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">SUV</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="Vue_ReservationCar.php?category=4" class="btn btn-secondary  btn-block">CHOISIR</a>
+                <a href="./ReservationCar.php?category=4" class="btn btn-secondary  btn-block">CHOISIR</a>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
             <div class="card-body" style="text-align: center;">
                 <h5 class="card-title">4 X 4</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="Vue_ReservationCar.php?category=5" class="btn btn-secondary  btn-block">CHOISIR</a>
+                <a href="./ReservationCar.php?category=5" class="btn btn-secondary  btn-block">CHOISIR</a>
             </div>
         </div>
     </div>
