@@ -1,3 +1,5 @@
+//Hiding error messages on 
+
 $('#errMess').hide();
 $('#sErrMess').hide();
 
