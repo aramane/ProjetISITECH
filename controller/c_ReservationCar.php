@@ -16,6 +16,7 @@ if (isset($_GET['category'])){
 
     $cars = $carManager->getByCategory($type);
 
+    
     echo '<div class="row" >';
 
     foreach($cars as $car)
@@ -23,19 +24,14 @@ if (isset($_GET['category'])){
 
     {
 
-        $userManager= new UserManager();
-        $userPremium = $userManager->getListPremium();
-
-        foreach($userPremium as $Premium)
-        {
 
 
-            $Premium->premium();
+
 
 
         include("./view/v_ListeCarType.php");
 
-        }
+
 
     }
 
