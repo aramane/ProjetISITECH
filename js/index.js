@@ -70,16 +70,12 @@ $('#subscribeBtn').on('click', function(e){
         $('#sErrMessText').text("Les champs en rouge sont obligatoires.");
         $('#sErrMess').show();
     }
-    else if(!regmail.test($('#Semail').val()) || !regphone.test($('#Sphone').val()))
+    else if(!regmail.test($('#Semail').val()))
     {
-        if(!regmail.test($('#Semail').val()))
-        {
-            $('#Semail').css('border-color', 'red');
-        }
-        if(!regphone.test($('#Sphone').val()))
-        {
-            $('#Sphone').css('bordel-color', 'red');
-        }
+        $('#Semail').css('border-color', 'red');
+        $('#connectLink').hide();
+        $('#sErrMessText').text("L'adresse e-mail renseignée est incorrecte.");
+        $('#sErrMess').show();
     }
     else
     {
