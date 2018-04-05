@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b373d82-179d-4b48-996a-58db8edeb049" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controller/c_ReservationCar.php" afterPath="$PROJECT_DIR$/controller/c_ReservationCar.php" />
-      <change beforePath="$PROJECT_DIR$/controller/c_ReservationType.php" afterPath="$PROJECT_DIR$/controller/c_ReservationType.php" />
       <change beforePath="$PROJECT_DIR$/model/CarManager.php" afterPath="$PROJECT_DIR$/model/CarManager.php" />
-      <change beforePath="$PROJECT_DIR$/view/v_ReservationType.php" afterPath="$PROJECT_DIR$/view/v_ReservationType.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v_ReservationType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="v_ReservationType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/v_ReservationType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -60,17 +57,26 @@
       <file leaf-file-name="CarManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/CarManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="721">
+              <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
-                <marker date="1522927524992" expanded="true" signature="245:404" ph="INSERT INTO car... " />
-                <marker date="1522927524992" expanded="true" signature="859:889" ph="DELETE FROM car... " />
-                <marker date="1522927524992" expanded="true" signature="1065:1097" ph="SELECT * FRO... car" />
-                <marker date="1522927524992" expanded="true" signature="1367:1406" ph="SELECT * FRO... car" />
-                <marker date="1522927524992" expanded="true" signature="1693:1730" ph="SELECT * FRO... car" />
-                <marker date="1522927524992" expanded="true" signature="1693:1740" ph="SELECT * FRO... car" />
-                <marker date="1522927524992" expanded="true" signature="2071:2243" ph="UPDATE car... " />
+                <marker date="1522929381119" expanded="true" signature="245:430" ph="INSERT INTO car... " />
+                <marker date="1522929381119" expanded="true" signature="957:987" ph="DELETE FROM car... " />
+                <marker date="1522929381119" expanded="true" signature="1163:1195" ph="SELECT * FRO... car" />
+                <marker date="1522929381119" expanded="true" signature="1465:1504" ph="SELECT * FRO... car" />
+                <marker date="1522929381119" expanded="true" signature="1790:1837" ph="SELECT * FRO... car" />
+                <marker date="1522929381119" expanded="true" signature="2162:2362" ph="UPDATE car... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/Car.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1628">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,16 +135,6 @@
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -162,10 +158,10 @@
         <option value="$PROJECT_DIR$/view/v_header.php" />
         <option value="$PROJECT_DIR$/ReservationCar.php" />
         <option value="$PROJECT_DIR$/view/v_ListeCarType.php" />
-        <option value="$PROJECT_DIR$/model/CarManager.php" />
         <option value="$PROJECT_DIR$/controller/c_ReservationCar.php" />
         <option value="$PROJECT_DIR$/controller/c_ReservationType.php" />
         <option value="$PROJECT_DIR$/view/v_ReservationType.php" />
+        <option value="$PROJECT_DIR$/model/CarManager.php" />
       </list>
     </option>
   </component>
@@ -182,7 +178,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -271,15 +267,15 @@
       <option name="presentableId" value="Default" />
       <updated>1522868077559</updated>
       <workItem from="1522868081733" duration="2508000" />
-      <workItem from="1522915986092" duration="9777000" />
+      <workItem from="1522915986092" duration="9965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12285000" />
+    <option name="totallyTimeSpent" value="12473000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -477,22 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/CarManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <marker date="1522927524992" expanded="true" signature="245:404" ph="INSERT INTO car... " />
-            <marker date="1522927524992" expanded="true" signature="859:889" ph="DELETE FROM car... " />
-            <marker date="1522927524992" expanded="true" signature="1065:1097" ph="SELECT * FRO... car" />
-            <marker date="1522927524992" expanded="true" signature="1367:1406" ph="SELECT * FRO... car" />
-            <marker date="1522927524992" expanded="true" signature="1693:1730" ph="SELECT * FRO... car" />
-            <marker date="1522927524992" expanded="true" signature="1693:1740" ph="SELECT * FRO... car" />
-            <marker date="1522927524992" expanded="true" signature="2071:2243" ph="UPDATE car... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -553,6 +533,29 @@
             <marker date="1522929157880" expanded="true" signature="3043:3462" ph="..." />
             <marker date="1522929157880" expanded="true" signature="3113:3224" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/CarManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding>
+            <marker date="1522929381119" expanded="true" signature="245:430" ph="INSERT INTO car... " />
+            <marker date="1522929381119" expanded="true" signature="957:987" ph="DELETE FROM car... " />
+            <marker date="1522929381119" expanded="true" signature="1163:1195" ph="SELECT * FRO... car" />
+            <marker date="1522929381119" expanded="true" signature="1465:1504" ph="SELECT * FRO... car" />
+            <marker date="1522929381119" expanded="true" signature="1790:1837" ph="SELECT * FRO... car" />
+            <marker date="1522929381119" expanded="true" signature="2162:2362" ph="UPDATE car... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1628">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
