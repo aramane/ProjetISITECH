@@ -17,13 +17,17 @@ if (isset($_GET['category'])){
     $cars = $carManager->getByCategory($type);
 
     echo '<div class="row" >';
+
     foreach($cars as $car)
     {
+
 
         include("./view/v_ListeCarType.php");
 
 
+
     }
+    echo count($cars);
     echo '</div>';
 
 

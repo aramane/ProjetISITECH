@@ -90,6 +90,8 @@ class CarManager
 
     }
 
+
+
     public function update(Car $car)
     {
         $q = $this->db->prepare('UPDATE car SET registration = :registration, name = :name, color = :color, model = :model, brand = :brand, id_option = :id_option, id_category = :id_category WHERE id = :id');
