@@ -65,7 +65,30 @@ class CarManager
         
         $q->closeCursor();
     }
-    
+
+    public function getByCategory($category)
+    {
+
+        $cars = [];
+
+        $q = $this->db->prepare('SELECT * FROM car WHERE id_category = :category ');
+        $q->execute(array(
+            'category' => $category
+        ));
+
+        while ($data = $q->fetch(PDO::FETCH_ASSOC))
+        {
+            $cars[] = new Car($data);
+        }
+
+        return $cars;
+
+        $q->closeCursor();
+
+
+
+
+    }
 
     public function update(Car $car)
     {
