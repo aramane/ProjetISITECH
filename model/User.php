@@ -10,6 +10,7 @@ class User {
     private $firstName;
     private $type;
     private $phone;
+    private $premium;
     private $id_authentification;
 
     public function hydrate(array $array)
@@ -72,6 +73,11 @@ class User {
         return $this->phone;
     }
     
+    public function premium()
+    {
+        return $this->premium;
+    }
+    
     public function id_authentification()
     {
         return $this->id_authentification;
@@ -117,6 +123,11 @@ class User {
     public function setPhone($phone) 
     {
         $this->phone = $phone;
+    }
+    
+    public function setPremium($premium)
+    {
+        $this->premium = $premium;
     }
     
     public function setId_authentification($id_authentification) 
