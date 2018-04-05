@@ -27,7 +27,10 @@ class UserManager
             'premium' => $user->premium(),
             'id_authentification' => $user->id_authentification()
         ));
+        $id = $this->db->lastInsertId();
         $q->closeCursor();
+        
+        return $id;
     }
     
 
