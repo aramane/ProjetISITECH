@@ -74,11 +74,11 @@
                     <div class="form-group">
                         <label>Carte Abonnement (Tarif préferenciel)</label>&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" checked id="customRadioInline1" name="cardabo" class="custom-control-input">
+                            <input type="radio" checked id="customRadioInline1" value="1" name="cardabo" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline1">OUI</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="cardabo" class="custom-control-input">
+                            <input type="radio" id="customRadioInline2" value="0" name="cardabo" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline2">NON</label>
                         </div>
 
