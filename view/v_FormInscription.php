@@ -60,7 +60,7 @@
 
                     <div class="form-group">
                         <label></label>
-                        <input type="email" class="form-control" id="Semail" name="Semail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" class="form-control" id="Semail" name="Semail" aria-describedby="emailHelp" placeholder="Adresse e-mail">
                     </div>
 
                     <div class="form-group">
