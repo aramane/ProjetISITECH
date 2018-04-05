@@ -5,7 +5,7 @@
             <h5 class="card-title"><?php echo $car->brand().' '.$car->model(); ?></h5>
             <div class="row container">
                 <div class="col-5 " style="text-align: center;">
-            <p><div style="height: 40px;width: 40px; background-color:<?php echo $car->color();?>; border-radius: 20px;margin-left: 80px; "></div></p>
+            <p><div style="height: 40px;width: 40px; background-color:<?php echo $car->color();?>; border-radius: 20px;margin-left: 80px;box-shadow: 0px 0px 4px 0px; "></div></p>
                 </div>
 
                 <div class="col-7 ">
