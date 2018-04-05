@@ -1,3 +1,12 @@
+$('#errMess').hide();
+
+$('#subscribe').on('click', function(e){
+    e.preventDefault();
+    $('#errMess').hide();
+    $('#connectmodal').modal('hide');
+    $('#Inscripmodal').modal('show');  
+})
+
 $('#connexionBtn').on('click', function (e) {
     e.preventDefault();
     $.ajax({
@@ -14,8 +23,7 @@ $('#connexionBtn').on('click', function (e) {
             }
             else
             {
-                $('#errMess').text("Identifiant(s) incorrect.");
-                $('#errMess').text("");
+                $('#errMess').show();
             }
         },
         error: function () {
