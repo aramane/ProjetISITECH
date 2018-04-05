@@ -15,7 +15,7 @@ class UserManager
 
     public function add(User $user)
     {
-        $q = $this->db->prepare('INSERT INTO user(address, email, name, firstName, type, phone, id_authentification) VALUES(:address, :email, :name, :firstName, :type, :phone, :id_authentification)');
+        $q = $this->db->prepare('INSERT INTO user(address, email, name, firstName, type, phone, premium, id_authentification) VALUES(:address, :email, :name, :firstName, :type, :phone, :premium, :id_authentification)');
         $q->execute(array(
             'address' => $user->address(),
             'email' => $user->email(),
@@ -23,6 +23,7 @@ class UserManager
             'firstName' => $user->firstName(),
             'type' => $user->type(),
             'phone' => $user->phone(),
+            'premium' => $user->premium(),
             'id_authentification' => $user->id_authentification()
         ));
         $q->closeCursor();
@@ -91,7 +92,7 @@ class UserManager
         $q->execute(array(
             'email' => $user->email()
         ));
-        $data = $req->fetch();
+        $data = $q->fetch();
         $q->closeCursor();
         
         if($data[0] == 0)
@@ -106,7 +107,7 @@ class UserManager
 
     public function update(User $user)
     {
-        $q = $this->db->prepare('UPDATE user SET address = :address, email = :email, name = :name, firstName = :firstName, type = :type, phone = :phone, id_authentification = :id_authentification WHERE id = :id');
+        $q = $this->db->prepare('UPDATE user SET address = :address, email = :email, name = :name, firstName = :firstName, type = :type, phone = :phone, premium = :premium, id_authentification = :id_authentification WHERE id = :id');
         $q->execute(array(
             'address' => $user->address(),
             'email' => $user->email(),
@@ -114,6 +115,7 @@ class UserManager
             'firstName' => $user->firstName(),
             'type' => $user->type(),
             'phone' => $user->phone(),
+            'premium' => $user->premium(),
             'id_authentification' => $user->id_authentification(),
             'id' => $user->id()
         ));
