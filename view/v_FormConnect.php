@@ -25,7 +25,7 @@
                   <input type="password" class="form-control" name="password" placeholder="Mot de passe">
               </div>
               
-              <div id="errMess" style="color: red;"></div>
+              <div id="errMess" style="color: red; display:none;">Vos identifiants n'ont pas été reconnus. <a href="" id="subscribe">Inscrivez-vous.</a></div>
               
               <br />
 
