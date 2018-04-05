@@ -14,7 +14,7 @@ $('#connexionBtn').on('click', function (e) {
             }
             else
             {
-                $('#errMess').text("Identifiant(s) incorrect(s).");
+                $('#errMess').text("Identifiant(s) incorrect.");
             }
         },
         error: function () {
