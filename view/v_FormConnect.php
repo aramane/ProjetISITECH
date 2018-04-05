@@ -18,7 +18,7 @@
           <form id="connect">
               <div class="form-group">
                   <label>Adresse e-mail</label>
-                  <input type="text" class="form-control" name="login" placeholder="Adresse e-mail">
+                  <input type="text" class="form-control" name="login" id="login" placeholder="Adresse e-mail">
               </div>
               <div class="form-group">
                   <label >Mot de passe :</label>
