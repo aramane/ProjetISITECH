@@ -9,6 +9,8 @@ class Car{
     private $color;
     private $model;
     private $brand;
+    private $url;
+    private $price;
     private $id_option;
     private $id_category;
     
@@ -59,6 +61,16 @@ class Car{
         return $this->model;
     }
     
+    public function url()
+    {
+        return $this->url;
+    }
+    
+    public function price()
+    {
+        return $this->price;
+    }
+    
     public function brand()
     {
         return $this->brand;
@@ -99,6 +111,16 @@ class Car{
     public function setModel($model)
     {
         $this->model = $model;
+    }
+    
+    public function setUrl($url)
+    {
+        $this->url = $url;
+    }
+    
+    public function setPrice($price)
+    {
+        $this->price = $price;
     }
     
     public function setBrand($brand)
