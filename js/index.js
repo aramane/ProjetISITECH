@@ -100,6 +100,7 @@ $('#subscribeBtn').on('click', function(e){
             {
                 if(data == 1)
                 {
+                    $('#Inscripmodal').modal('hide');
                     swal({
                         type: 'success',
                         title: 'Inscrit',
