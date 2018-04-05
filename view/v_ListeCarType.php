@@ -17,7 +17,7 @@
 
                  if ($Premium->premium()==1)
 
-                     echo '<div class="card" style="background-color: #c89f16; border: none;"> Tarif premium    ' .($car->price()*(0.80)).'</div>';
+                     echo '<div class="card" style="background-color: #5dc876; border: none; height: 5%;"> Tarif premium    ' .($car->price()*(0.80)).'</div>';
 
                  ?>
 
