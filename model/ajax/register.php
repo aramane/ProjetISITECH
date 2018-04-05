@@ -11,8 +11,10 @@ $user = new User(array(
     'firstName' => $_POST['SfirstName'],
     'type' => 'C',
     'phone' => $_POST['Sphone'],
+    'premium' => $_POST['cardabo'],
     'password' => $_POST['Spassword']
 ));
+
 
 if($usermanager->userExists($user))
 {
