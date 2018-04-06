@@ -49,7 +49,7 @@ $row = $userManager->getFullList();
         echo '</tr>';
     }
     ?>
-      
+            <a class="btn btn-primary" href="v_UserTableAdd.php" role="button">New User</a>
 
         </table>
     </div>
