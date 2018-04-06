@@ -22,7 +22,9 @@ if($usermanager->userExists($user))
 }
 else
 {
-    $usermanager->add($user);
+    $id = $usermanager->add($user);
+    $user->setId($id);
+    Authentification::connect($user);
     $response = 1;
 }
 

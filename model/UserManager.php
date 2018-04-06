@@ -27,7 +27,10 @@ class UserManager
             'premium' => $user->premium(),
             'id_authentification' => $user->id_authentification()
         ));
+        $id = $this->db->lastInsertId();
         $q->closeCursor();
+        
+        return $id;
     }
     
 
@@ -65,6 +68,22 @@ class UserManager
 
         return $users;
         
+        $q->closeCursor();
+    }
+
+    public function getListPremium(){
+
+        $users = [];
+
+        $q = $this->db->query('SELECT * FROM user WHERE premium=1');
+
+        while ($data = $q->fetch(PDO::FETCH_ASSOC))
+        {
+            $users[] = new User($data);
+        }
+
+        return $users;
+
         $q->closeCursor();
     }
     

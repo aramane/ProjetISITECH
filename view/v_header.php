@@ -61,7 +61,6 @@ include_once ("v_headB.php");
                     <?php
                     }
                     ?>
-                    <div class="dropdown-divider"></div>
                     <?php if(Access::client())
                     {
                     ?>

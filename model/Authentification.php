@@ -68,6 +68,7 @@ class Authentification {
         $_SESSION['type'] = $user->type();
         $_SESSION['name'] = $user->name();
         $_SESSION['firstName'] = $user->firstName();
+        $_SESSION['premium'] = $user->premium();
     }
     
     public static function disconnect()

@@ -1,3 +1,11 @@
+$('#customRadioInline2').on('change', function(){
+    $('#premiumMsg').hide();
+})
+
+$('#customRadioInline1').on('change', function(){
+    $('#premiumMsg').show();
+})
+
 //Hiding error messages on 
 
 $('#errMess').hide();
@@ -39,7 +47,7 @@ $('#connexionBtn').on('click', function (e) {
         success: function (data)
         {
             if(data == 1)
-            {
+            { 
                 window.location.reload();
             }
             else
@@ -100,7 +108,14 @@ $('#subscribeBtn').on('click', function(e){
             {
                 if(data == 1)
                 {
-                    window.location.reload();
+                    $('#Inscripmodal').modal('hide');
+                    swal({
+                        type: 'success',
+                        title: 'Inscrit',
+                        text: 'Vous-êtes maintenant inscris et vous pouvez profiter de nos services.',
+                    }).then(function(){
+                        window.location.reload();
+                    });
                 }
                 else
                 {

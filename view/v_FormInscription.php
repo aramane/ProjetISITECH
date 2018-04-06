@@ -60,7 +60,7 @@
 
                     <div class="form-group">
                         <label></label>
-                        <input type="email" class="form-control" id="Semail" name="Semail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" class="form-control" id="Semail" name="Semail" aria-describedby="emailHelp" placeholder="Adresse e-mail">
                     </div>
 
                     <div class="form-group">
@@ -81,6 +81,7 @@
                             <input type="radio" id="customRadioInline2" value="0" name="cardabo" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline2">NON</label>
                         </div>
+                        <small id="premiumMsg" style="color: orange;"><i>L'abonnement sera facturé sur la carte ayant servi à la première réservation pour un montant de 29.90€ HT par mois. Cette carte permet d'obtenir des tarifs avantageux sur vos réservations.</i></small>
 
                     </div>
                     

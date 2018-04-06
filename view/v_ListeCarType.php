@@ -12,6 +12,20 @@
             <p><div style="font-size: 25px; color: #815817;"><b><?php echo $car->price().' € par jour';?></b></div></p>
                 </div>
             </div>
+
+                 <?php
+
+                 if (isset($_SESSION['premium'])==1){
+
+                     echo '<div class="card" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b> Tarif premium  ' .($car->price()*(0.80)).' € ( économie '.($car->price()-($car->price()*(0.80))).' €)  </b></p></div>';
+                 }else{
+
+                     echo '<div class="card" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b>Devenez Premium pour profier de -20% </b></p></div>';
+                 }
+                 ?>
+
+
+
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="./ReservationCar.php?category=1" class="btn btn-secondary  btn-block">CHOISIR</a>
         </div>
