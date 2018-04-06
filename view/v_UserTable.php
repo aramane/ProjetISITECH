@@ -1,6 +1,5 @@
 ﻿<?php
 include("../model/loadclass.php");
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,10 +15,10 @@ include("../model/loadclass.php");
     
 </head>
 <body>
-<br /><br />
+
 <div class="container">
     <h3 align="center">Tableau</h3>
-    <br />
+
     <div class="table-responsive">
         <table id="user_data" class="table table-striped table-bordered">
             <thead>
@@ -44,11 +43,12 @@ $row = $userManager->getFullList();
         echo '<td>'.$value->address().'</td><br>';
         echo '<td>'.$value->phone().'</td><br>';
         echo '<td>'.$value->email().'</td><br>';
-        echo '<td> <a href="v_UserTableUpdate.php?id=' . $value->id() . '"><span>modifier</span></a></td><br>';
+        echo '<td> <a href="v_UserTableUpdate.php?id=' . $value->id() . '"><span>modifier</span></a>
+                <a href="v_UserTableDelete.php?id=' . $value->id() . '"><span>supprimer</span></a></td><br>';
         echo '</tr>';
     }
     ?>
-      
+            <a class="btn btn-primary" href="v_UserTableAdd.php" role="button">New User</a>
 
         </table>
     </div>

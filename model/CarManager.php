@@ -72,7 +72,7 @@ class CarManager
     {
         $cars = [];
 
-        $q = $this->db->prepare('SELECT * FROM car WHERE id_category = :category ');
+        $q = $this->db->prepare('SELECT * FROM car INNER JOIN caroption ON car.id_option = caroption.id WHERE car.id_category=:category');
         $q->execute(array(
             'category' => $category
         ));
