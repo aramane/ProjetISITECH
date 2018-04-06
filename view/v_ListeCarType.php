@@ -15,10 +15,13 @@
 
                  <?php
 
-                 if ($_SESSION['premium']==1)
+                 if (isset($_SESSION['premium'])==1){
 
                      echo '<div class="card" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b> Tarif premium  ' .($car->price()*(0.80)).' € ( économie '.($car->price()-($car->price()*(0.80))).' €)  </b></p></div>';
+                 }else{
 
+                     echo '<div class="card" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b>Devenez Premium pour profier de -20% </b></p></div>';
+                 }
                  ?>
 
 
