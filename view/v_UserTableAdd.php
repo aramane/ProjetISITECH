@@ -1,4 +1,5 @@
-﻿*<<?php
+<?php
+
 include("../model/loadclass.php");
 
 ?>
@@ -8,12 +9,12 @@ include("../model/loadclass.php");
     <title>ISILOC</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    
+
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
 
-    
+
 </head>
 <body>
 
@@ -33,22 +34,22 @@ include("../model/loadclass.php");
             </tr>
             </thead>
             <?php
-$userManager = new UserManager();
-$row = $userManager->getFullList();
+            $userManager = new UserManager();
+            $row = $userManager->getFullList();
 
-    foreach($row as $key => $value)
-    {
-        echo '<tr>';
-        echo '<td>'.$value->name().'</td><br>';
-        echo '<td>'.$value->firstName().'</td><br>';
-        echo '<td>'.$value->address().'</td><br>';
-        echo '<td>'.$value->phone().'</td><br>';
-        echo '<td>'.$value->email().'</td><br>';
-        echo '<td> <a href="v_UserTableUpdate.php"><span>modifier</span></a></td><br>';
-        echo '</tr>';
-    }
-    ?>
-      
+            foreach($row as $key => $value)
+            {
+                echo '<tr>';
+                echo '<td>'.$value->name().'</td><br>';
+                echo '<td>'.$value->firstName().'</td><br>';
+                echo '<td>'.$value->address().'</td><br>';
+                echo '<td>'.$value->phone().'</td><br>';
+                echo '<td>'.$value->email().'</td><br>';
+                echo '<td> <a href="v_UserTableUpdate.php"><span>modifier</span></a></td><br>';
+                echo '</tr>';
+            }
+            ?>
+
 
         </table>
     </div>
@@ -60,10 +61,8 @@ $row = $userManager->getFullList();
     $(document).ready(function(){
         $('#user_data').DataTable();
     });
-    
+
     $('#myModal').on('shown.bs.modal', function (){
         $('#myInput').trigger('focus')
     })
 </script>
-
-
