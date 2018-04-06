@@ -1,6 +1,6 @@
 <div class="col-3">
     <div class="card">
-        <img src="./media/img/berline.png" style="height: 250px; ">
+        <img src="<?php echo $car->url(); ?>" style="height: 250px;width: 420px; ">
         <div class="card-body" style="text-align: center;">
             <h5 class="card-title"><?php echo $car->brand().' '.$car->model(); ?></h5>
             <div class="row container">
@@ -17,17 +17,14 @@
 
                  if (isset($_SESSION['premium'])==1){
 
-                     echo '<div class="card" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b> Tarif premium  ' .($car->price()*(0.80)).' € ( économie '.($car->price()-($car->price()*(0.80))).' €)  </b></p></div>';
+                     echo '<div class="card btn" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b> Tarif premium  ' .($car->price()*(0.80)).' € ( économie '.($car->price()-($car->price()*(0.80))).' €)  </b></p></div>';
                  }else{
 
-                     echo '<div class="card" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b>Devenez Premium pour profier de -20% </b></p></div>';
+                     echo '<div class="card btn" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b>Devenez Premium pour profier de -20% </b></p></div>';
                  }
                  ?>
-
-
-
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="./ReservationCar.php?category=1" class="btn btn-secondary  btn-block">CHOISIR</a>
+<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="./ReservationCarCard.php?id=<?php echo $car->id();?>" class="btn btn-secondary  btn-block">CHOISIR</a>
         </div>
     </div>
 </div>

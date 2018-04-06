@@ -6,40 +6,29 @@ include("model/loadClass.php");
 include("view/v_header.php");
 echo '<div style="height: 10%;"></div>';
 
-if (isset($_GET['category'])){
+if (isset($_GET['id'])){
 
-    $type=$_GET['category'];
+    $idCar=$_GET['id'];
 
 
 
     $carManager= new CarManager();
 
-    $cars = $carManager->getByCategory($type);
-
-
-    echo '<div class="row" >';
-
-    foreach($cars as $car)
-
-
-    {
+    $car = $carManager->get( $idCar);
 
 
 
 
 
-
-        include("./view/v_ListeCarType.php");
-
-
-
-    }
+        include("./view/v_ReservationCarCard.php");
 
 
 
 
 
-    echo '</div>';
+
+
+
 
 
 

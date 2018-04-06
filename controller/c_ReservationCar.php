@@ -25,10 +25,6 @@ if (isset($_GET['category'])){
     {
 
 
-
-
-
-
         include("./view/v_ListeCarType.php");
 
 
