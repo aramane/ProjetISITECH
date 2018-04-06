@@ -1,4 +1,9 @@
-<div class="col-3">
+
+<div class="container card" style="padding:25px;">
+
+    <div class="row">
+
+<div class="col-5">
     <div class="card">
         <img src="<?php echo $car->url(); ?>" style="height: 250px;width: 420px; ">
         <div class="card-body" style="text-align: center;">
@@ -26,4 +31,14 @@
 
         </div>
     </div>
+</div>
+
+        <div class="col-7">
+            <div class="card">
+
+            </div>
+        </div>
+
+    </div>
+    <a href="./ReservationCarCard.php?id=<?php echo $car->id();?>" class="btn btn-secondary  btn-block">Booking</a>
 </div>
