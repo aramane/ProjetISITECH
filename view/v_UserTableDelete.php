@@ -1,11 +1,8 @@
 <?php
     include("../model/loadclass.php"); 
-    $user = new User($_POST);
-    $user->setId($_GET['id']);
+    $user = new User($_GET);
     $userManager = new UserManager();
-    $userManager->update($user);
-    header('Location: v_UserTable.php');
-    exit();
+    $userManager->delete($user);
 ?>
 <!DOCTYPE html>
 <html>

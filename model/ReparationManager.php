@@ -66,7 +66,9 @@ class ReparationManager
 
     public function update(Reparation $reparation)
     {
-        $q = $this->db->prepare('UPDATE reparation SET date = :date, description = :description, duration = :duration, garage = :garage, price = :price, id_car = :id_car WHERE id = :id');
+        $q = $this->db->prepare('UPDATE reparation SET date = :date, description = :description, 
+        duration = :duration, garage = :garage, price = :price, id_car = :id_car
+        WHERE id = :id');
         $q->execute(array(
             'id' => $reparation->id(),
             'date' => $reparation->date(),
@@ -76,6 +78,7 @@ class ReparationManager
             'price' => $reparation->price(),
             'id_car' => $reparation->id_car(),
         ));
+        $q->closeCursor();
     }
 
     // PDO
