@@ -48,3 +48,6 @@ if (isset($_GET['category'])){
 
 }
 ?>
+
+
+<script type="text/javascript" src="js/index.js"></script>
