@@ -35,6 +35,8 @@
 
         <div class="col-7">
             <div class="card">
+                
+
 
             </div>
         </div>
