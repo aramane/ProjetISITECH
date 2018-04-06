@@ -44,7 +44,7 @@ $row = $userManager->getFullList();
         echo '<td>'.$value->address().'</td><br>';
         echo '<td>'.$value->phone().'</td><br>';
         echo '<td>'.$value->email().'</td><br>';
-        echo '<td> <a href="v_UserTableUpdate.php"><span>modifier</span></a></td><br>';
+        echo '<td> <a href="v_UserTableUpdate.php?id=' . $value->id() . '"><span>modifier</span></a></td><br>';
         echo '</tr>';
     }
     ?>

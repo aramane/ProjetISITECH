@@ -1,7 +1,18 @@
 <?php
     include("../model/loadclass.php"); 
-    print_r($_POST);
-?>
+    $user = new User($_POST);
+    $user->setId($_GET['id']);
+    $user2 = new User(array(
+        'id' => 2,
+        'name' => 'test'
+    ));
+    print_r($user);
+    print_r($user2);
+    $userManager = new UserManager();
+    $userManager->update($user);
+    $userManager->update($user2);
+
+?> 
 <!DOCTYPE html>
 <html>
     <head>
