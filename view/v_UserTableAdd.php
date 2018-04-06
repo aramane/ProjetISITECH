@@ -23,7 +23,7 @@
 
 
     </br>
-    <form action="v_UserTableUpdateAddConfirm.php" method="post">
+    <form action="v_UserTableAddConfirm.php" method="post">
         <div class="form-group">
             <label for="exampleInputEmail1">Name</label>
             <input type="text" class="form-control" name="name"  aria-describedby="emailHelp" placeholder="Enter Name">
