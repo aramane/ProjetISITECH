@@ -1,3 +1,11 @@
+$('#customRadioInline2').on('change', function(){
+    $('#premiumMsg').hide();
+})
+
+$('#customRadioInline1').on('change', function(){
+    $('#premiumMsg').show();
+})
+
 //Hiding error messages on 
 
 $('#errMess').hide();
