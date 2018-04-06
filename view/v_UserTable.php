@@ -1,6 +1,5 @@
-﻿*<<?php
+﻿<?php
 include("../model/loadclass.php");
-
 ?>
 <!DOCTYPE html>
 <html>
