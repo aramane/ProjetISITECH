@@ -15,14 +15,18 @@ class CaroptionManager
 
     public function add(Caroption $caroption)
     {
-        $q = $this->db->prepare('INSERT INTO caroption(id, airbag, capacity, conditioner, passenger, permis) VALUES(:id, :airbag, :capacity, :conditioner, :passenger, :permis)');
+        $q = $this->db->prepare('INSERT INTO caroption(id, airbag, capacity, conditioner, passenger, permis, boardcpu, cam, wheel, radar) VALUES(:id, :airbag, :capacity, :conditioner, :passenger, :permis, :boardcpu, :cam, :wheel, :radar)');
         $q->execute(array(
             'id' => $caroption->id(),
             'airbag' => $caroption->airbag(),
             'capacity' => $caroption->capacity(),
             'conditioner' => $caroption->conditioner(),
             'passenger' => $caroption->passenger(),
-            'permis' => $caroption->permis()
+            'permis' => $caroption->permis(),
+            'boardcpu' => $caroption->boardcpu(),
+            'cam' => $caroption->cam(),
+            'wheel' => $caroption->wheel(),
+            'radar' => $caroption->radar()
         ));
         $q->closeCursor();
     }
@@ -47,7 +51,8 @@ class CaroptionManager
 
         return new Caroption($data);
     }
-
+    
+    
     public function getFullList()
     {
         $caroptions = [];
@@ -66,14 +71,18 @@ class CaroptionManager
     public function update(Caroption $caroption)
     {
         $q = $this->db->prepare('UPDATE caroption SET airbag = :airbag, capacity = :capacity, conditioner = :conditioner,
-         passenger = :passenger, permis = :permis WHERE id = :id');
+         passenger = :passenger, permis = :permis, boardcpu = :boardcpu, cam = :cam, wheel = :wheel, radar = :radar WHERE id = :id');
         $q->execute(array(
             'id' => $caroption->id(),
             'airbag' => $caroption->airbag(),
             'capacity' => $caroption->capacity(),
             'conditioner' => $caroption->conditioner(),
             'passenger' => $caroption->passenger(),
-            'permis' => $caroption->permis()
+            'permis' => $caroption->permis(),
+            'boardcpu' => $caroption->boardcpu(),
+            'cam' => $caroption->cam(),
+            'wheel' => $caroption->wheel(),
+            'radar' => $caroption->radar()
         ));
     }
 

@@ -8,6 +8,10 @@ class Caroption {
     private $conditioner;
     private $passenger;
     private $permis;
+    private $boardcpu;
+    private $cam;
+    private $wheel;
+    private $radar;
 
     public function hydrate(array $array)
     {
@@ -57,6 +61,26 @@ class Caroption {
     {
         return $this->permis;
     }
+    
+    public function boardcpu()
+    {
+        return $this->boardcpu;
+    }
+    
+    public function cam()
+    {
+        return $this->cam;
+    }
+    
+    public function wheel()
+    {
+        return $this->wheel;
+    }
+    
+    public function radar()
+    {
+        return $this->radar;
+    }
 
     // setters
     public function setId($id) 
@@ -87,5 +111,25 @@ class Caroption {
     public function setPermis($permis)
     {
         $this->permis = $permis;
+    }
+    
+    public function setBoardcpu($boardcpu)
+    {
+        $this->boardcpu = $boardcpu;
+    }
+    
+    public function setCam($cam)
+    {
+        $this->cam = $cam;
+    }
+    
+    public function setWheel($wheel)
+    {
+        $this->wheel = $wheel;
+    }
+    
+    public function setRadar($radar)
+    {
+        $this->radar = $radar;
     }
 }
