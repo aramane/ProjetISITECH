@@ -3,7 +3,7 @@
 
 <div style="margin-left: 1%; margin-right: 1%;">
     <div class="col-md-12">
-        <button class="btn btn-primary" href="v_UserTableAdd.php"><i class="fa fa-plus-circle"></i> Nouveau</button>
+        <button class="btn btn-primary" title="Ajouter un utilisateur" href="v_UserTableAdd.php"><i class="fa fa-plus-circle"></i> Nouveau</button>
     </div><br />
     <table id="user_data" class="table-striped table table-bordered">
         <thead>
@@ -25,7 +25,7 @@
                 echo '<td>' . $value->address() . '</td>';
                 echo '<td>' . $value->phone() . '</td>';
                 echo '<td>' . $value->email() . '</td>';
-                echo '<td><button class="btn btn-primary" id="updateBtn"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" id="deleteBtn"><i class="fa fa-trash"></i></button></td>';
+                echo '<td><button class="btn btn-primary" title="Modifier un utilisateur" id="updateBtn"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" title="Supprimer un utilisateur" id="deleteBtn"><i class="fa fa-trash"></i></button></td>';
                 echo '</tr>';
             }
             ?>
