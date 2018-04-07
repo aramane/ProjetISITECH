@@ -6,6 +6,7 @@
             <file>file:/C:/wamp64/www/projetLocation/view/v_IndexBody.php</file>
             <file>file:/C:/wamp64/www/projetLocation/ReservationType.php</file>
             <file>file:/C:/wamp64/www/projetLocation/view/v_ListeCarType.php</file>
+            <file>file:/C:/wamp64/www/projetLocation/model/ajax/addUser.php</file>
             <file>file:/C:/wamp64/www/projetLocation/model/CarManager.php</file>
             <file>file:/C:/wamp64/www/projetLocation/ReservationCar.php</file>
             <file>file:/C:/wamp64/www/projetLocation/location%2006042018%2014h02.sql</file>
@@ -23,12 +24,14 @@
             <file>file:/C:/wamp64/www/projetLocation/model/ajax/register.php</file>
             <file>file:/C:/wamp64/www/projetLocation/model/User.php</file>
             <file>file:/C:/wamp64/www/projetLocation/controller/c_ReservationType.php</file>
+            <file>file:/C:/wamp64/www/projetLocation/view/v_FormCreateUser.php</file>
             <file>file:/C:/wamp64/www/projetLocation/model/Caroption.php</file>
             <file>file:/C:/wamp64/www/projetLocation/view/v_headB.php</file>
             <file>file:/C:/wamp64/www/projetLocation/location.sql</file>
             <file>file:/C:/wamp64/www/projetLocation/view/v_header.php</file>
             <file>file:/C:/wamp64/www/projetLocation/model/CaroptionManager.php</file>
             <file>file:/C:/wamp64/www/projetLocation/tableau.php</file>
+            <file>file:/C:/wamp64/www/projetLocation/js/userManagement.js</file>
             <file>file:/C:/wamp64/www/projetLocation/view/v_FormInscription.php</file>
             <file>file:/C:/wamp64/www/projetLocation/index.php</file>
             <file>file:/C:/wamp64/www/projetLocation/model/Car.php</file>
