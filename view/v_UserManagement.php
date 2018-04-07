@@ -3,7 +3,7 @@
 
 <div style="margin-left: 1%; margin-right: 1%;">
     <div class="col-md-12">
-        <button class="btn btn-primary" title="Ajouter un utilisateur" href="v_UserTableAdd.php"><i class="fa fa-plus-circle"></i> Nouveau</button>
+        <?php include("v_FormCreateUser.php"); ?>
     </div><br />
     <table id="user_data" class="table-striped table table-bordered">
         <thead>
@@ -13,18 +13,36 @@
                 <th class="text-center">Adresse</th>
                 <th class="text-center">Téléphone</th>
                 <th class="text-center">Email</th>
+                <th class="text-center">Premium</th>
+                <th class="text-center">Type</th>
+                <th class="text-center">Password</th>
                 <th class="text-center"><i class="fa fa-cog"></i></th>
             </tr>
         </thead>
         <tbody>
             <?php
             foreach ($row as $key => $value) {
+                if($value->type() == 'C')
+                {
+                    $type = "Client";
+                }
+                elseif($value->type() == 'DC')
+                {
+                    $type = "Direction commerciale";
+                }
+                elseif($value->type() == 'A')
+                {
+                    $type = "Administrateur";
+                }
                 echo '<tr class="text-center" id="' . $value->id() . '">';
                 echo '<td>' . $value->name() . '</td>';
                 echo '<td>' . $value->firstName() . '</td>';
                 echo '<td>' . $value->address() . '</td>';
                 echo '<td>' . $value->phone() . '</td>';
                 echo '<td>' . $value->email() . '</td>';
+                echo '<td>' . ($value->premium() == 1 ? "OUI" : "NON") . '</td>';
+                echo '<td>' . $type . '</td>';
+                echo '<td>' . $value->password() . '</td>';
                 echo '<td><button class="btn btn-primary" title="Modifier un utilisateur" id="updateBtn"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" title="Supprimer un utilisateur" id="deleteBtn"><i class="fa fa-trash"></i></button></td>';
                 echo '</tr>';
             }
