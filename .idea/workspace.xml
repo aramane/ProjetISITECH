@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b373d82-179d-4b48-996a-58db8edeb049" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/view/v_ReservationCarCardOption.php" afterPath="$PROJECT_DIR$/view/v_ReservationCarCardOption.php" />
       <change beforePath="$PROJECT_DIR$/view/v_headB.php" afterPath="$PROJECT_DIR$/view/v_headB.php" />
+      <change beforePath="$PROJECT_DIR$/view/v_header.php" afterPath="$PROJECT_DIR$/view/v_header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,14 +77,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_ReservationCar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/c_ReservationCar.php">
+      <file leaf-file-name="v_header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/v_header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="3" lean-forward="false" selection-start-line="36" selection-start-column="3" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <marker date="1523007373273" expanded="true" signature="106:118" ph="..." />
-              </folding>
+            <state relative-caret-position="-733">
+              <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,6 +124,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="v_IndexBody.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/v_IndexBody.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-631">
+              <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="v_ReservationCarCardId.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/v_ReservationCarCardId.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,23 +161,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v_ListeCarType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/v_ListeCarType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <marker date="1523264427738" expanded="true" signature="917:943" ph="..." />
-                <marker date="1523264427738" expanded="true" signature="917:985" ph="..." />
-                <marker date="1523264427738" expanded="true" signature="998:1009" ph="..." />
-                <marker date="1523264427738" expanded="true" signature="1216:1284" ph="..." />
-                <marker date="1523264427738" expanded="true" signature="1297:1308" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="v_headB.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="v_headB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/v_headB.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -191,7 +182,6 @@
         <option value="$PROJECT_DIR$/controller/index.php" />
         <option value="$PROJECT_DIR$/view/v_IndexBody.php" />
         <option value="$PROJECT_DIR$/ReservationType.php" />
-        <option value="$PROJECT_DIR$/view/v_header.php" />
         <option value="$PROJECT_DIR$/ReservationCar.php" />
         <option value="$PROJECT_DIR$/view/v_ReservationType.php" />
         <option value="$PROJECT_DIR$/model/UserManager.php" />
@@ -207,6 +197,7 @@
         <option value="$PROJECT_DIR$/view/v_ReservationCarCardId.php" />
         <option value="$PROJECT_DIR$/view/v_ReservationCarCardOption.php" />
         <option value="$PROJECT_DIR$/view/v_headB.php" />
+        <option value="$PROJECT_DIR$/view/v_header.php" />
       </list>
     </option>
   </component>
@@ -329,12 +320,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522868077559</updated>
       <workItem from="1522868081733" duration="2508000" />
-      <workItem from="1522915986092" duration="43111000" />
+      <workItem from="1522915986092" duration="43342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45619000" />
+    <option name="totallyTimeSpent" value="45850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="586" y="333" width="1302" height="724" extended-state="0" />
@@ -534,14 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/v_IndexBody.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -567,14 +550,6 @@
             <marker date="1523268841151" expanded="true" signature="3021:3240" ph="UPDATE user... " />
             <marker date="1523268841151" expanded="true" signature="3836:3921" ph="SELECT COUNT... user" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/v_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,6 +855,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="88" lean-forward="false" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/v_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-733">
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/v_IndexBody.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="30" />
           <folding />
         </state>
       </provider>
