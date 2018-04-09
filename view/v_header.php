@@ -19,9 +19,11 @@ include_once ("v_headB.php");
                 <a class="nav-link" href="./ReservationType.php">Réservation</a>
             </li>
 
-
             <li class="nav-item">
-                <a class="nav-link" href="#"></a>
+                <a class="nav-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><b>Pour test -> login: admin@isiloc.fr / password: admin</b></a>
             </li>
 
         </ul>
