@@ -43,12 +43,13 @@
                 echo '<td>' . ($value->premium() == 1 ? "OUI" : "NON") . '</td>';
                 echo '<td>' . $type . '</td>';
                 echo '<td>' . $value->password() . '</td>';
-                echo '<td><button class="btn btn-primary" title="Modifier un utilisateur" id="updateBtn"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" title="Supprimer un utilisateur" id="deleteBtn"><i class="fa fa-trash"></i></button></td>';
+                echo '<td><button class="btn btn-primary updateUser" title="Modifier un utilisateur" data-toggle="modal" data-target="#updateUserModal"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;<button class="btn btn-danger delUser" title="Supprimer un utilisateur" id="deleteBtn"><i class="fa fa-trash"></i></button></td>';
                 echo '</tr>';
             }
             ?>
         </tbody>
     </table>
+    <?php include("v_FormUpdateUser.php"); ?>
 </div>
 
 <script>
