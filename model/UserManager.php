@@ -31,8 +31,7 @@ class UserManager
         $q->closeCursor();
         
         return $id;
-    }
-    
+    }  
 
     public function delete(User $user)
     {
