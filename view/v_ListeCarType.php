@@ -20,7 +20,7 @@
                      echo '<div class="card btn" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b> Tarif premium  ' .($car->price()*(0.80)).' € ( économie '.($car->price()-($car->price()*(0.80))).' €)  </b></p></div>';
                  }else{
 
-                     echo '<div class="card btn" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b>Devenez Premium pour profier de -20% </b></p></div>';
+                     echo '<div class="card btn" style="background-color: #815817; border: none; height: 5%;padding-top: 2%;"><p  style="color: #fff"><b>Devenez Premium pour profiter de -20% </b></p></div>';
                  }
                  ?>
 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
