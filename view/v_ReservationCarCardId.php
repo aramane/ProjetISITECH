@@ -2,7 +2,7 @@
 
 
 <div class="col-5">
-    <div class="card">
+    <div class="card" style="    box-shadow: 0px 3px 13px 0px #0e0e0e85;border: none;">
         <img src="<?php echo $car->url(); ?>" style="height: 250px;width: 420px; ">
         <div class="card-body" style="text-align: center;">
             <h5 class="card-title"><?php echo $car->brand().' '.$car->model(); ?></h5>
