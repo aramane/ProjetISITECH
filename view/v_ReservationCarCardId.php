@@ -1,7 +1,5 @@
 
-<div class="container card" style="padding:25px;">
 
-    <div class="row">
 
 <div class="col-5">
     <div class="card">
@@ -33,14 +31,3 @@
     </div>
 </div>
 
-        <div class="col-7">
-            <div class="card">
-
-
-
-            </div>
-        </div>
-
-    </div>
-    <a href="./ReservationCarCard.php?id=<?php echo $car->id();?>" class="btn btn-secondary  btn-block">Booking</a>
-</div>

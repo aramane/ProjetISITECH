@@ -13,19 +13,25 @@ if (isset($_GET['id'])){
 
 
 
-    $carManager= new CarManager();
+    $CarManager= new CarManager();
 
-    $car = $carManager->get( $idCar);
+    $car = $CarManager->get($idCar);
 
+    echo '<div class="container card" style="padding:25px;">
 
-
-
-
-        include("./view/v_ReservationCarCard.php");
+    <div class="row">';
 
 
+        include("./view/v_ReservationCarCardId.php");
+
+    $CaroptionManager= new CaroptionManager();
+
+    $option = $CaroptionManager->get($idCar);
+
+     include("./view/v_ReservationCarCardOption.php");
 
 
+echo '</div></div>';
 
 
 

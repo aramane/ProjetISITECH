@@ -51,6 +51,8 @@ class CaroptionManager
 
         return new Caroption($data);
     }
+
+
     
     
     public function getFullList()
