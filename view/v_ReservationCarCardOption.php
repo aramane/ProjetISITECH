@@ -4,7 +4,8 @@
 
 
         <div class="col-7">
-            <div class="card">
+            <div class="card" style="padding: 15px;box-shadow: 0px 3px 13px 0px #0e0e0e85;border: none;">
+                <div class="card" style="padding: 15px;" >
                     <h3 style="text-align: center">OPTION</h3><br/>
                 <div class="row" style="color: #757171;">
                     <div class="col" style="text-align: center">
@@ -85,6 +86,34 @@
                         }
                         ?>
                     </div>
+
+</div>
+                </div>
+<br/>
+                <div class="card" style="padding: 15px;">
+                <h3 style="text-align: center;">RÉSERVATION</h3>
+                <br/>
+
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="datepicker" class="form-control" placeholder="DÉBUT DE LOCATION">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="datepickerArriver" class="form-control" placeholder="FIN DE LOCATION">
+                        </div>
+                    </div><br/>
+                    <button type="submit" class="btn btn-block">RÉSERVEZ</button>
+                </form>
+
+                <script>
+                    $( function() {
+                        $( "#datepicker" ).datepicker();
+                        $( "#datepickerArriver" ).datepicker();
+                    } );
+                </script>
+
+
 
 </div>
 
