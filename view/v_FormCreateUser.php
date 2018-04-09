@@ -60,13 +60,14 @@
                         <label>Carte Abonnement (Tarif préferenciel)</label>&nbsp;&nbsp;&nbsp;&nbsp;
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" checked id="newUserRadio1" value="1" name="newUserAbo" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline1">OUI</label>
+                            <label class="custom-control-label" for="newUserRadio1">OUI</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="newUserRadio2" value="0" name="newUserAbo" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">NON</label>
+                            <label class="custom-control-label" for="newUserRadio2">NON</label>
                         </div>
-                    </div>                 
+                    </div>
+                    <div id="createErrMess" style="color: red;"></div>
                     <br />
                     <button type="submit" class="btn btn-secondary btn-block text-white" id="addUserBtn" name="valider" value="valider">Créer l'utilisateur</button>
                 </form>
