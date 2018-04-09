@@ -1,6 +1,13 @@
 <?php
 session_start();
+
 include("model/loadClass.php");
+
+if(!Access::admin())
+{
+    header("Location: index");
+}
+
 include("view/v_header.php");
 
 $userManager = new UserManager();
