@@ -49,7 +49,7 @@ include_once ("v_headB.php");
                     <?php if(Access::admin())
                     {
                     ?>
-                        <a class="dropdown-item" href="#">Gestion Utilisateur</a>
+                        <a class="dropdown-item" href="userManagement">Gestion Utilisateur</a>
                     <?php
                     }
                     if(Access::adminOrSalesManager())
