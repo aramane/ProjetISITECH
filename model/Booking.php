@@ -89,4 +89,18 @@ class Booking {
     {
         $this->code = $code;
     }
+    
+    public function generateCode()
+    {
+        $date = date('Y-m');
+	$characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	$charactersLength = strlen($characters);
+	$code = 'LOC-'.$date.'-';
+	    
+	for ($i = 0; $i < $length; $i++)
+	{
+	    $code .= $characters[rand(0, $charactersLength - 1)];
+	}
+	$this->code = $code;
+    }
 }
