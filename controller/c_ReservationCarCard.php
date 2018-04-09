@@ -26,7 +26,7 @@ if (isset($_GET['id'])){
 
     $CaroptionManager= new CaroptionManager();
 
-    $option = $CaroptionManager->get($idCar);
+    $option = $CaroptionManager->get($car->id_option());
 
      include("./view/v_ReservationCarCardOption.php");
 
